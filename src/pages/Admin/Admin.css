@@ -1,0 +1,149 @@
+/* Full page wrapper */
+.admin-container {
+  width: 100%;
+  min-height: 100vh;
+  background: #0a0a0a;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 60px 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Dashboard card */
+.admin-card {
+  width: 900px;
+  max-width: 95%;
+  background: linear-gradient(145deg, #0c0c0c, #101010);
+  padding: 35px;
+  border-radius: 14px;
+  box-shadow: 0 0 25px rgba(255, 0, 0, 0.18);
+  color: white;
+  backdrop-filter: blur(7px);
+  border: 1px solid rgba(255, 0, 0, 0.25);
+}
+
+/* Page title */
+.admin-title {
+  text-align: center;
+  color: #ff5c5c;
+  margin-bottom: 25px;
+  font-size: 32px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Stats box layout */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 18px;
+}
+
+/* Total count box */
+.count-box {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid #222;
+  padding: 22px;
+  border-radius: 12px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.count-box:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 12px rgba(255, 60, 60, 0.2);
+}
+
+.count-number {
+  font-size: 42px;
+  color: #ff5c5c;
+  font-weight: 700;
+  margin-top: 5px;
+}
+
+/* Subtitle */
+.sub-title {
+  color: #ff5c5c;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+/* Table styling */
+.customer-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #141414;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  border: 1px solid #222;
+}
+
+.customer-table th,
+.customer-table td {
+  padding: 14px 16px;
+  text-align: left;
+  color: #e6e6e6;
+  border-bottom: 1px solid #222;
+  font-size: 15px;
+}
+
+.customer-table th {
+  background: #191919;
+  color: #ff5c5c;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.customer-table tr:hover {
+  background: rgba(255, 80, 80, 0.08);
+  transition: 0.25s;
+}
+
+/* Status text color */
+.status-field {
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+/* Optional: Color-coded status */
+.status-field:contains("Completed") {
+  color: #4cff4c;
+}
+
+.status-field:contains("Service in Process"),
+.status-field:contains("Installation") {
+  color: #ffa500;
+}
+
+.status-field:contains("Contract"),
+.status-field:contains("Booking") {
+  color: #58a6ff;
+}
+
+/* Loading text */
+.loading-text {
+  text-align: center;
+  color: #ff5c5c;
+  font-size: 18px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .customer-table th,
+  .customer-table td {
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  .admin-card {
+    padding: 20px;
+  }
+
+  .admin-title {
+    font-size: 26px;
+  }
+}

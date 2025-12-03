@@ -1,0 +1,122 @@
+.product-page {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+  }
+  
+  .product-header {
+    position: relative;
+    text-align: center;
+  }
+  
+  .product-image {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+    filter: brightness(60%);
+  }
+  
+  .product-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .product-content {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .product-content h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .product-content p {
+    font-size: 25px;
+    line-height: 1.7;
+  }
+  .brands-section {
+    padding: 40px 20px;
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .brand-description {
+    max-width: 900px;
+    margin: 20px auto;
+    font-size: 20px;
+    line-height: 1.8;
+  }
+  
+  .brand-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 30px;
+  }
+  
+  .brand-card {
+    background-color: #fff;
+    color: #000;
+    padding: 20px;
+    border-radius: 12px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .brand-card img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 15px;
+  }
+  
+  .brand-card button {
+    display: block;
+    margin: 8px auto;
+    padding: 10px 14px;
+    border: 1px solid #000;
+    background: none;
+    cursor: pointer;
+    border-radius: 20px;
+    font-weight: bold;
+  }
+  .additional-images {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+  }
+  
+  .additional-images h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .image-gallery img {
+    width: 250px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+  }
+  
