@@ -1,0 +1,346 @@
+.homepage-container {
+    position: relative;
+    min-height: 100vh;
+    background-image: url('/hero-image.jpg');   /* Correct path */
+
+    background-size: cover;
+    background-position: center;
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align:center;
+    text-transform:capitalize;
+  }
+  
+  .homepage-overlay {
+    background-color: rgba(0, 0, 0, 0.6); /* dark overlay */
+    padding: 60px 20px;
+    width: 100%;
+    
+  }
+  
+  .homepage-subtitle {
+    font-size: 2rem;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    /* text-transform: uppercase; */
+  }
+  
+  .homepage-title {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+
+  }
+  
+  .homepage-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .btn {
+    padding: 12px 24px;
+    font-weight: bold;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .btn-outline {
+    background: white;
+    color: black;
+    border: 2px solid white;
+  }
+  
+  .btn-outline:hover {
+    background: transparent;
+    color: white;
+    border-color: white;
+  }
+  
+  .btn-primary {
+    background-color: #e63946;
+    color: white;
+  }
+  
+  .btn-primary:hover {
+    background-color: #c02734;
+  }
+ /* Full-width services section with darker background */
+.services-section {
+  width: 100%;
+  background: #0d0d0d;
+  padding: 3rem 0;
+  text-align: center;
+  color: #fff;
+  margin: 100;
+  
+}
+
+.services-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  width: 100%;
+  padding: 0 1rem;
+  box-sizing: border-box;
+ 
+}
+
+.service-card {
+  width: 300px;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  text-decoration: none;
+  color: white;
+  transition: transform 0.22s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-card:hover {
+  transform: scale(1.06);
+}
+
+.service-card .overlay {
+  background: rgba(0,0,0,0.48);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0; left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+}
+
+.service-card h3 {
+  font-size: 2.6rem;
+  margin-bottom: 1.1rem;
+  z-index: 2;
+}
+
+.explore-btn {
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 0.56rem 2rem;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  z-index: 2;
+  transition: all 0.23s cubic-bezier(.4,0,.2,1);
+  pointer-events: auto;
+}
+.explore-btn:hover {
+  background: #e42525;
+  border-color: #e42525;
+  color: #fff;
+}
+
+  
+  /* Bottom red button */
+  .explore-all-btn {
+    display: inline-block;
+    margin-top: 3rem;
+    padding: 0.8rem 2rem;
+    background: red;
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  /* Main container */
+.hero-section {
+    background-color: #111111;
+    padding: 30px 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-left: 0%;
+  }
+  
+  /* Inner flex container */
+  .hero-container {
+    max-width: 1300px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  /* Text side */
+  .hero-text {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .hero-text h1 {
+    font-size: 2.8rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+  
+  .hero-text p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    color: white;
+    margin-bottom: 40px;
+  }
+  
+  .hero-button {
+    display: inline-block;
+    padding: 12px 24px;
+    border: 2px solid white;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .hero-button:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  /* Image side */
+  .hero-image {
+    flex: 1;
+    min-width: 500px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .hero-image img {
+    width: 200%;
+    max-width: 600px;
+    border-bottom: 5px solid red;
+    border-radius: 20px;
+  }
+  .footer-container {
+    background-color: #1a1a1a;
+    color: white;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer-banner {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+  }
+  
+  .footer-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+  }
+  
+  .consult-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    color: black;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .consult-button:hover {
+    background: #fc0b0b;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 40px 30px;
+  }
+  
+  .footer-left {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 30px;
+  }
+  
+  .footer-logo {
+    width: 100px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-brand {
+    font-family: 'Georgia', serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+    position: relative;
+  }
+  
+  .footer-brand::after {
+    content: "";
+    display: block;
+    width: 323px;
+    height: 2px;
+    background-color:red;
+    margin-top: 5px;
+  }
+  
+  .footer-contact {
+    font-size: 18px;
+    margin: 5px 0;
+  }
+  
+  .footer-links {
+    flex: 1;
+    display: flex;
+    gap: 100px;
+    flex-wrap: wrap;
+  }
+  
+  .footer-column {
+    min-width: 160px;
+  }
+  
+  .footer-column h4 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #f0f0f0;
+  }
+  
+  .footer-column a {
+    display: block;
+    color: #ccc;
+    text-decoration: none;
+    margin-bottom: 1px;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+
+  }
+  
+  .footer-column a:hover {
+    color: red;
+    
+  }
+  

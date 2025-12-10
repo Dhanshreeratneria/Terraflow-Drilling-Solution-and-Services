@@ -1,0 +1,53 @@
+.services-wrapper {
+    background-color: #121212;
+    color: #ffffff;
+    padding: 40px 20px;
+    max-width: 12000px;
+    margin: auto;
+  }
+  
+  .services-heading {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 40px;
+    color: #ffffff;
+    border-bottom: 7px solid #333;
+    padding-bottom: 10px;
+  }
+  
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+  }
+  
+  .service-box {
+    background-color: #1c1c1c;
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.22s ease, box-shadow 0.3s ease;
+  }
+  
+  .service-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
+  }
+  
+  .service-box a {
+    display: block;
+    color: #ff3b3b;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-decoration: none;
+  }
+  
+  .service-box a:hover {
+    color: #ff6363;
+  }
+  
+  .service-box p {
+    font-size: 1rem;
+    color: #ccc;
+  }
+  

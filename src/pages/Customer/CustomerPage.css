@@ -1,0 +1,112 @@
+/* PAGE CONTAINER */
+.cust-container {
+  max-width: 700px;
+  margin: auto;
+  padding: 30px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* TITLE */
+.cust-title {
+  text-align: center;
+  color: #0A3D62; /* Admin navy blue */
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+/* SEARCH BOX CONTAINER */
+.cust-search-box {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+/* SEARCH INPUT */
+.cust-search-box input {
+  padding: 12px 14px;
+  width: 260px;
+  border: 2px solid #b6c6d6;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+}
+
+.cust-search-box input:focus {
+  border-color: #1E90FF; /* Blue highlight */
+}
+
+/* SEARCH BUTTON */
+.cust-search-box button {
+  padding: 12px 20px;
+  background-color: #1E90FF;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.cust-search-box button:hover {
+  background-color: #0E6FD3;
+}
+
+/* ERROR MESSAGE */
+.cust-error {
+  text-align: center;
+  background: #FFD6D6;
+  color: #A80000;
+  padding: 12px;
+  border-radius: 8px;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+/* CUSTOMER INFO CARD */
+.cust-status-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border-left: 6px solid #0A3D62;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* NAME */
+.cust-status-card h2 {
+  margin: 0 0 10px 0;
+  color: #0A3D62;
+  font-weight: bold;
+}
+
+/* TEXT FIELDS */
+.cust-status-card p {
+  margin: 6px 0;
+  font-size: 15px;
+}
+
+/* STATUS AREA */
+.cust-status {
+  margin-top: 15px;
+  font-size: 16px;
+}
+
+/* STATUS BADGE */
+.badge {
+  display: inline-block;
+  background-color: #00A67E; /* Green-teal */
+  color: white;
+  margin-left: 6px;
+  padding: 6px 12px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 600;
+  box-shadow: 0 0 6px rgba(0, 166, 126, 0.5);
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(5px); }
+  to { opacity: 1; transform: translateY(0); }
+}

@@ -1,0 +1,58 @@
+.drilling-page {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+  }
+  
+  .drilling-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 40px 20px;
+    align-items: center;
+    border-bottom: 1px solid #333;
+  }
+  
+  .service-title {
+    max-width: 50%;
+  }
+  
+  .service-tag {
+    color: red;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 20px;
+  }
+  
+  .service-title h1 {
+    font-size: 50px;
+    margin: 10px 0;
+  }
+  
+  .service-image {
+    max-width: 100%;
+  }
+  
+  .service-image img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .drilling-description {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .drilling-description h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .drilling-description p {
+    font-size: 18px;
+    margin-bottom: 16px;
+    color: #ccc;
+  }
+  
