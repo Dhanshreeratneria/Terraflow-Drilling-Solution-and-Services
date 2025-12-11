@@ -1,33 +1,28 @@
-import React from "react";
 import { Link } from "react-router-dom";
-import "./HomePage.css";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+  import "./HomePage.css";
 
 function HomePage() {
   const services = [
     {
       title: "Drilling",
       image: "/Drilling.webp",
-      link: "/Drilling",
+      link: "/drilling",
     },
     {
       title: "Pump Installations",
       image: "/PumpInstallation.jpg",
-      link: "/PumpInstallation",
+      link: "/pump-installation",
     },
     {
       title: "Well Service",
-      image: "/wellservice.webp",
+      image: "/well-service",
       link: "/well-service",
     },
     {
       title: "Solar Installations",
       image: "/solarinstallation.webp",
       link: "/solar-installations",
-    },
-    
+    }
   ];
 
   return (
@@ -35,7 +30,7 @@ function HomePage() {
       {/* Hero Section 1 */}
       <div className="homepage-container">
         <div className="homepage-overlay">
-          <h4 className="homepage-subtitle">TerraFlow Drilling and well Services</h4>
+          <h4 className="homepage-subtitle">TerraFlow Drilling and Well Services</h4>
           <h1 className="homepage-title">
             Water Solutions for Every <br /> Property
           </h1>
@@ -67,6 +62,7 @@ function HomePage() {
             </Link>
           ))}
         </div>
+
         <Link to="/services" className="explore-all-btn">
           Explore All Services
         </Link>
@@ -78,14 +74,16 @@ function HomePage() {
           <div className="hero-text">
             <h1>Water Well Drilling Professionals of West Texas</h1>
             <p>
-              At TerraFlow Drilling and well Services LLC, we take care to provide our customers with high-quality
-              services and products, personalized to fit their unique needs. Whether you are a Rancher, a Homeowner or
-              a Commercial Company, we will work with you to create a water system that is right for you!
+              At TerraFlow Drilling and Well Services LLC, we provide high-quality
+              services tailored to your specific needs. Whether you are a rancher,
+              homeowner, or commercial company, we build the perfect water system
+              for you.
             </p>
             <Link to="/services" className="hero-button">
               Explore All Services
             </Link>
           </div>
+
           <div className="hero-image">
             <img src="/Truck.jpg" alt="Well Drilling" />
           </div>
@@ -102,8 +100,8 @@ function HomePage() {
         <div className="footer-content">
           {/* Left Section */}
           <div className="footer-left">
-            <img src="/logo.jpeg" alt="Arrowhead Logo" className="footer-logo" />
-            <p className="footer-brand">TerraFlow Drilling and well Services</p>
+            <img src="/logo.jpeg" alt="Logo" className="footer-logo" />
+            <p className="footer-brand">TerraFlow Drilling and Well Services</p>
             <p className="footer-contact">teraflowdrilling@gmail.com</p>
             <p className="footer-contact">P.O. Box 1903, Alpine, TX 79831</p>
           </div>
@@ -113,11 +111,11 @@ function HomePage() {
             <div className="footer-column">
               <h4>Services</h4>
               <Link to="/drilling">Drilling</Link>
-              <Link to="/services/pump-installations">Pump Installations</Link>
+              <Link to="/pump-installation">Pump Installations</Link>
               <Link to="/well-service">Well Service</Link>
               <Link to="/solar-installations">Solar Installations</Link>
               <Link to="/water-storage">Water Storage</Link>
-              <Link to="/well-rehab">Well Rehabilitation</Link>
+              <Link to="/well-rehabilitation">Well Rehabilitation</Link>
               <Link to="/drilling-permits">Drilling Permits</Link>
               <Link to="/well-diagnostics">Well Diagnostics</Link>
               <Link to="/down-hole-camera">Down Hole Camera</Link>
@@ -127,9 +125,9 @@ function HomePage() {
 
             <div className="footer-column">
               <h4>Info</h4>
-              <Link to="/products">Products We Use</Link>
-              <Link to="/services/drilling-permits">Drilling Permits</Link>
-              <Link to="/about">About Us</Link>
+              <Link to="/product">Products We Use</Link>
+              <Link to="/drilling-permits">Drilling Permits</Link>
+              <Link to="/aboutus">About Us</Link>
               <Link to="/contact">Contact Us</Link>
             </div>
           </div>
