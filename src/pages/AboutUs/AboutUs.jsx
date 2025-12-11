@@ -1,6 +1,6 @@
+import React from "react";
 import { Link } from "react-router-dom";
 import "./AboutUs.css"; // Ensure this CSS file exists
-
 function AboutUs() {
   return (
     <div className="about-page">
