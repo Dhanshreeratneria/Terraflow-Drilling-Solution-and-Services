@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./ContactUs.css";
+import "./Contactus.css";
 import { db, auth } from "../../firebase";
 import { collection, addDoc, serverTimestamp } from "firebase/firestore";
 import { createUserWithEmailAndPassword } from "firebase/auth";
