@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import "./AboutUs.css"; // Ensure this CSS file exists
 
@@ -57,10 +56,10 @@ function AboutUs() {
 
         <div className="footer-content">
           {/* Left Section */}
-          <div className="footer-left">
+            <div className="footer-left">
             <img
-              src="/logo-white.png"
-              alt="TerraFlow Logo"
+              src="/logo.jpeg"
+              alt="TerraFlow"
               className="footer-logo"
             />
             <p className="footer-brand">TerraFlow Drilling and Well Services</p>
@@ -73,11 +72,11 @@ function AboutUs() {
             <div className="footer-column">
               <h4>Services</h4>
               <Link to="/drilling">Drilling</Link>
-              <Link to="/pump-installations">Pump Installations</Link>
+              <Link to="/PumpInstallation">Pump Installations</Link>
               <Link to="/well-service">Well Service</Link>
               <Link to="/solar-installations">Solar Installations</Link>
-              <Link to="/water-storage">Water Storage</Link>
-              <Link to="/well-rehab">Well Rehabilitation</Link>
+              <Link to="/WaterStorage">Water Storage</Link>
+              <Link to="/well-rehabilitation">Well Rehabilitation</Link>
               <Link to="/drilling-permits">Drilling Permits</Link>
               <Link to="/well-diagnostics">Well Diagnostics</Link>
               <Link to="/down-hole-camera">Down Hole Camera</Link>
@@ -87,10 +86,10 @@ function AboutUs() {
 
             <div className="footer-column">
               <h4>Info</h4>
-              <Link to="/Products">Products We Use</Link>
+              <Link to="/product">Products We Use</Link>
               <Link to="/drilling-permits">Drilling Permits</Link>
-              <Link to="AboutUs">About Us</Link>
-              <Link to="/Contact">Contact Us</Link>
+              <Link to="aboutus">About Us</Link>
+              <Link to="/contact">Contact Us</Link>
             </div>
           </div>
         </div>
